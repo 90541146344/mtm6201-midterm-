@@ -1,0 +1,400 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Container */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(68, 74, 62);
+}
+
+/* Logo Style */
+.logo {
+    height: 50px;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-bar li {
+    margin-left: 20px;
+}
+
+/* Link Styles */
+.nav-bar a {
+    text-decoration: none;
+    color: #fffefe;
+    font-weight: bold;
+}
+
+.nav-bar a:hover {
+    color: #f3ef31;
+}
+
+/* Main Heading */
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Sections */
+.hero, .featured-products, .testimonials {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Banner Section */
+.Banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Banner Image Animation */
+.Banner img {
+    max-width: 100%;
+    height: auto;
+    animation: scaleAnimation 3s infinite alternate;
+}
+
+/* Scaling Animation Keyframes */
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+/* Features Container */
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Individual Feature Styling */
+.feature {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    text-align: center;
+    width: 20%;
+    transition: transform 0.2s, box-shadow 0.2s;
+    align-items: center;
+    margin: 1em;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Fade-in Animation Keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Feature Image Responsiveness */
+.feature img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Hover Effect for Features */
+.feature:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Featured Products Section */
+.featured-products {
+    background-color: #e4f0e2;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Footer Style */
+footer {
+    background-color: rgb(68, 74, 62);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* General Animation for Headings and Paragraphs */
+h1, h2, h3, p {
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Fade-in Animation with Color Change */
+.fade-in-red {
+    animation: fadeInRed 1.5s ease forwards;
+}
+
+/* Keyframes for Fade-in Effect */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Mission and Vision Sections */
+.mission-vision, .history, .team, .community {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Flex Layout for Mission and Vision */
+.mission-vision {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+/* Individual Mission and Vision Styles */
+.mission, .vision {
+    width: 45%;
+}
+
+/* Team Gallery Style */
+.team-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Team Images Animation */
+.team-gallery img {
+    width: 30%;
+    margin: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+/* Gallery Section */
+.gallery {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Gallery Container Flex Layout */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Gallery Image Animation */
+.gallery-container img {
+    width: 30%;
+    margin: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+/* Fade-in Animation for Images */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Visibility for Loaded Images */
+body.loaded .team-gallery img,
+body.loaded .gallery-container img {
+    opacity: 1;
+}
+
+/* Mission and Vision Layout */
+.mission-vision {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2em 0;
+}
+
+/* Mission and Vision Backgrounds */
+.mission, .vision {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5em;
+    text-align: center;
+    width: 40%;
+    margin: 1em;
+    transition: transform 0.2s;
+}
+
+/* Hover Effect on Mission and Vision */
+.mission:hover, .vision:hover {
+    transform: scale(1.02);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .mission, .vision {
+        width: 80%;
+    }
+}
+
+/* Contact Information Section */
+.contact-info {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Flex Layout for Info Boxes */
+.info-boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+/* Individual Info Box Style */
+.info-box {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form Styling */
+.contact-form {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Form Group Layout */
+.form-group {
+    margin: 15px 0;
+}
+
+/* Label Styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input Field Styles */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d35400;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #c94f00;
+}
+
+/* Responsive Adjustments for Small Screens */
+@media (max-width: 600px) {
+    .info-boxes {
+        flex-direction: column;
+    }
+    
+    .info-box {
+        width: auto;
+    }
+}
+
+/* Parent Container for Centering */
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+/* Doomsday Button Style */
+.doomsday {
+    width: 200px; 
+    height: 100px; 
+    font-size: 18px; 
+    color: white;
+    background-color: #c70039; 
+    border: none;
+    border-radius: 20px; 
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    transition: background-color 0.3s ease; 
+}
+
+/* Warning Effect for Doomsday Button */
+.doomsday::before {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: yellow;
+    font-weight: bold;
+    opacity: 0;
+    animation: warning 1.5s infinite; 
+}
+
+/* Keyframes for Warning Effect */
+@keyframes warning {
+    0% { opacity: 0; }
+    50% { opacity: 1; transform: translateY(-10px); }
+    100% { opacity: 0; }
+}
+
+/* Hover Animation for Doomsday Button */
+.doomsday:hover {
+    animation: hoverWarning 0.7s infinite; 
+}
+
+/* Keyframes for Hover Animation */
+
